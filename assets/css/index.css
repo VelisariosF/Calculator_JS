@@ -1,0 +1,208 @@
+button {
+  width: 50px;
+  height: 50px;
+}
+
+.calculator-container {
+  border: 2px solid black;
+  display: -ms-grid;
+  display: grid;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 20%;
+      grid-template-areas: "screen" "caculation-buttons-container" "numbers-container";
+  row-gap: 2%;
+  padding: 2%;
+}
+
+.calculator-container .screen {
+  grid-area: "screen";
+  border: 1.3px solid gray;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.calculator-container .caculation-buttons-container {
+  grid-area: "caculation-buttons-container";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1.3px solid gray;
+}
+
+.calculator-container .caculation-buttons-container button {
+  background-color: #CCA33D;
+  -webkit-transition: background-color 0.2s ease-out;
+  border: none;
+  color: white;
+  padding: 0.6em 1.2em;
+  text-align: center;
+  text-justify: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.calculator-container .caculation-buttons-container button:hover {
+  background-color: #717972;
+}
+
+.calculator-container .numbers-container {
+  border: 1.5px solid gray;
+  grid-area: "numbers-container";
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+}
+
+.calculator-container .numbers-container button {
+  background-color: #42cc3d;
+  -webkit-transition: background-color 0.2s ease-out;
+  border: none;
+  color: white;
+  padding: 0.6em 1.2em;
+  text-align: center;
+  text-justify: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.calculator-container .numbers-container button:hover {
+  background-color: #717972;
+}
+
+.calculator-container .numbers-container .number_0 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.calculator-container .numbers-container .dot {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.calculator-container .numbers-container .c_symbol {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.calculator-container .numbers-container .number_1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.calculator-container .numbers-container .number_2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.calculator-container .numbers-container .number_3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.calculator-container .numbers-container .number_4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.calculator-container .numbers-container .number_5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.calculator-container .numbers-container .number_6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.calculator-container .numbers-container .number_7 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.calculator-container .numbers-container .number_8 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.calculator-container .numbers-container .number_9 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.calculator-container .numbers-container .equal_symbol {
+  height: auto;
+  background-color: #3d8ccc;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+/*# sourceMappingURL=index.css.map */
