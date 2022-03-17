@@ -10,27 +10,28 @@
 </head>
 <body>
     <div class="calculator-container">
-        <div class="screen"><h1 class="result-text">egrhet</h1></div>
+        <div id="screen" class="screen"><h1 id="result-text" class="result-text"></h1></div>
         <div class="caculation-buttons-container">
-            <button class="plus">&plus;</button>
-            <button class="minus">&minus;</button>
-            <button class="multiplication">&times;</button>
-            <button class="division">&divide;</button>
+            <button id="+" class="plus" onclick="getData(this.id)">&plus;</button>
+            <button id="-" class="minus" onclick="getData(this.id)">&minus;</button>
+            <button id="x" class="multiplication" onclick="getData(this.id)">&times;</button>
+            <button id="/" class="division" onclick="getData(this.id)">&divide;</button>
         </div>
         <div class="numbers-container">
-           <button class="number_0">0</button>
-           <button class="number_1">1</button>
-           <button class="number_2">2</button>
-           <button class="number_3">3</button>
-           <button class="number_4">4</button>
-           <button class="number_5">5</button>
-           <button class="number_6">6</button>
-           <button class="number_7">7</button>
-           <button class="number_8">8</button>
-           <button class="number_9">9</button>
-           <button class="dot">&dot;</button>
-           <button class="c_symbol">&comp;</button>
-           <button class="equal_symbol">&equals;</button>
+           <button id="0" class="number_0" onclick="getData(this.id)">0</button>
+           <button id="1" class="number_1" onclick="getData(this.id)">1</button>
+           <button id="2" class="number_2" onclick="getData(this.id)">2</button>
+           <button id="3" class="number_3" onclick="getData(this.id)">3</button>
+           <button id="4" class="number_4" onclick="getData(this.id)">4</button>
+           <button id="5" class="number_5" onclick="getData(this.id)">5</button>
+           <button id="6" class="number_6" onclick="getData(this.id)">6</button>
+           <button id="7" class="number_7" onclick="getData(this.id)">7</button>
+           <button id="8" class="number_8" onclick="getData(this.id)">8</button>
+           <button id="9" class="number_9" onclick="getData(this.id)">9</button>
+           <button id="&#44;" class="dot" onclick="getData(this.id)">&#44;</button>
+           <button id="C" class="c_symbol" onclick="getData(this.id)">&comp;</button>
+           <button id="=" class="equal_symbol" onclick="getData(this.id)">&equals;</button>
+          
         </div>
     </div>
 </body>
